@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              app:cardCornerRadius="8dp"
+              android:padding="8dp">
+
+    <TextView
+            android:id="@+id/tvVacationName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vacation Name"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+    <TextView
+            android:id="@+id/tvVacationPeriod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vacation Period"
+            android:textSize="14sp"/>
+
+    <TextView
+            android:id="@+id/tvVacationStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status"
+            android:textSize="14sp"/>
+</LinearLayout>

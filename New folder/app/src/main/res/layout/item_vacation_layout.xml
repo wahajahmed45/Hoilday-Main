@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="wrap_content"
+                                   android:layout_margin="6dp"
+                                   app:cardCornerRadius="8dp"
+                                   app:cardElevation="3dp">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+        <!-- Nom de la Vacance -->
+        <TextView
+                android:id="@+id/tvVacationName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/vacation_name"
+                android:textStyle="bold"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="8dp"/>
+
+        <!-- Description de la Vacance -->
+        <TextView
+                android:id="@+id/tvVacationDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/description"
+                android:textSize="18sp"
+                android:textColor="@android:color/darker_gray"
+                android:layout_marginBottom="8dp"/>
+
+        <!-- Dates de la Vacance -->
+        <TextView
+                android:id="@+id/tvVacationDates"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/start_date_end_date"
+                android:textSize="14sp"
+                android:textColor="@android:color/holo_blue_dark"
+                android:layout_marginBottom="8dp"/>
+        <!-- Localisation de la Vacance -->
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp">
+
+            <!-- Le Statut de la Vacance -->
+            <TextView
+                    android:id="@+id/tvVacationLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:text="@string/location"
+                    android:textSize="13sp"
+                    android:textColor="@android:color/holo_green_dark"
+                    android:layout_marginTop="5dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="0dp"/>
+            <TextView
+                    android:id="@+id/tvVacationStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/status"
+                    android:textSize="13sp"
+                    android:textColor="@android:color/white"
+                    android:padding="4dp"
+                    android:layout_gravity="end|center"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="8dp"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+        <!--android:background="@drawable/status_background"-->

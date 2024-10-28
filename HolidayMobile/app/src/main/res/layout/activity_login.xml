@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back_ground"
+
+    tools:context=".views.LoginActivity">
+
+  <androidx.appcompat.widget.Toolbar
+      android:id="@+id/toolbar"
+      android:layout_width="match_parent"
+      android:layout_height="?attr/actionBarSize"
+      android:background="@color/back_ground_toolbar"
+      android:elevation="4dp"
+      android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+      android:title="@string/login" />
+
+  <androidx.cardview.widget.CardView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/toolbar"
+      android:layout_margin="30dp"
+      app:cardCornerRadius="30dp"
+      app:cardElevation="20dp">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+      <RelativeLayout
+          android:id="@+id/main"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/toolbar"
+          android:verticalScrollbarPosition="defaultPosition"
+          android:elevation="20dp"
+          android:padding="16dp"
+          android:background="@color/back_ground_card">
+
+        <!-- Titre de l'application -->
+
+        <com.developer.gbuttons.GoogleSignInButton
+            android:id="@+id/googleBtn"
+            android:layout_width="259dp"
+            android:layout_height="59dp"
+            android:layout_below="@+id/bLogin"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="43dp"
+            android:layout_marginTop="31dp"
+            android:layout_marginEnd="33dp"
+            android:padding="8dp"
+            android:text="@string/sign_in_google"
+            android:textSize="30sp"
+            app:isDarkTheme="true" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="24dp"
+            android:text="@string/login"
+            android:textColor="@color/material_dynamic_primary10"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/inEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/edit_text_background"
+            android:elevation="20dp"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:padding="12dp" />
+
+        <LinearLayout
+                android:id="@+id/passwordContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/inEmail"
+                android:layout_marginTop="46dp"
+                android:background="@drawable/edit_text_background"
+                android:elevation="20dp"
+                android:orientation="horizontal"
+                android:padding="12dp">
+
+          <EditText
+                  android:id="@+id/inPassword"
+                  android:layout_width="252dp"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:hint="Password"
+                  android:inputType="textPassword"/>
+
+          <ImageButton
+                  android:id="@+id/togglePasswordVisibility"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:background="?attr/selectableItemBackground"
+                  android:contentDescription="Toggle password visibility"
+                  android:padding="8dp"
+                  android:src="@drawable/baseline_visibility_off_24"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bLogin"
+            android:layout_width="200dp"
+            android:layout_height="48dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/passwordContainer"
+            android:layout_marginTop="49dp"
+            android:background="@drawable/rounded_button"
+            android:elevation="20dp"
+            android:padding="0dp"
+            android:text="@string/sign_in"
+            android:textColor="@android:color/white" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="80dp"
+            android:layout_height="64dp"
+            android:indeterminate="true"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/signUpRedirectText"
+            android:layout_width="286dp"
+            android:layout_height="57dp"
+            android:layout_below="@+id/googleBtn"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="41dp"
+            android:layout_marginEnd="31dp"
+            android:padding="8dp"
+            android:text="@string/not_yet_sign_up"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:background="@drawable/textview_click_effect" />
+      </RelativeLayout>
+    </ScrollView>
+
+  </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:showIn="navigation_view">
+    <group
+            android:checkableBehavior="single">
+
+        <item
+                android:id="@+id/nav_vacation"
+                android:icon="@drawable/sharp_travel_24"
+                android:title="@string/vacations"/>
+        <item
+                android:id="@+id/nav_act"
+                android:icon="@drawable/vacances"
+                android:title="@string/activity"/>
+
+        <item
+                android:id="@+id/nav_chat"
+                android:icon="@drawable/chat"
+                android:title="Chat"/>
+        <item
+                android:id="@+id/nav_emploi"
+                android:icon="@drawable/emploi_de_temps"
+                android:title="@string/agenda"/>
+
+    </group>
+
+    <item android:title="">
+        <menu>
+            <item android:id="@+id/nav_logout"
+                  android:icon="@drawable/nav_logout"
+                  android:title="@string/logout"/>
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "307112219205",
+    "firebase_url": "https://holiday-429104-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "holiday-429104",
+    "storage_bucket": "holiday-429104.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:307112219205:android:1740ef7e431e530159c92c",
+        "android_client_info": {
+          "package_name": "com.example.apparchilog"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "307112219205-kgsdl47uri7ph73ljtg0tiojv4v9va1u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.apparchilog",
+            "certificate_hash": "4961937e7d6903d9dbdcda8905729adad0c8b991"
+          }
+        },
+        {
+          "client_id": "307112219205-v945eb3lmmigj6c00tvdp6nd1v9be028.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.apparchilog",
+            "certificate_hash": "4a43e2b01868c8ef6c97cff4f8a6fddfa81005ee"
+          }
+        },
+        {
+          "client_id": "307112219205-d0i72psd919ilnqd3aplb65f82hmhl1q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCX2SXNkXA-l7VxsId7gbGM65SHzWfJ0Jw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "307112219205-d0i72psd919ilnqd3aplb65f82hmhl1q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

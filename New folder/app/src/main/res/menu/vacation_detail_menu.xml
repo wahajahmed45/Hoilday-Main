@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+            android:id="@+id/action_add"
+            android:icon="@drawable/add_people"
+            android:title="@string/edit"
+            app:showAsAction="ifRoom"/>
+    <item
+            android:id="@+id/action_add_calendar"
+            android:icon="@drawable/baseline_assignment_add_24"
+            android:title="@string/add_to_calendar"
+            app:showAsAction="ifRoom"/>
+
+</menu>

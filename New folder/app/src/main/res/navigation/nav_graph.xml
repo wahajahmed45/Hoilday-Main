@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/nav_graph"
+            app:startDestination="@id/fragment_container">
+    <fragment android:id="@+id/fragment_container"
+              android:name="com.example.apparchilog.fragments.VacationsFragment"
+              android:label="Vacances"
+              tools:layout="@layout/fragment_vacations">
+
+        <action android:id="@+id/action_fragment_container_to_createVacation" app:destination="@id/createVacation"/>
+        <action android:id="@+id/action_fragment_container_to_detailsVacationFragment"
+                app:destination="@id/detailsVacationFragment"/>
+    </fragment>
+    <fragment android:id="@+id/detailsVacationFragment"
+              android:name="com.example.apparchilog.fragments.DetailsVacationFragment"
+              android:label="Détails vacances"
+              tools:layout="@layout/fragment_details_vacation">
+
+        <action android:id="@+id/action_detailsVacationFragment_to_detailActivity"
+                app:destination="@id/detailActivity"/>
+        <action android:id="@+id/action_detailsVacationFragment_to_creatParticipant"
+                app:destination="@id/creatParticipant"/>
+        <action android:id="@+id/action_detailsVacationFragment_to_weather" app:destination="@id/weather"/>
+    </fragment>
+    <fragment android:id="@+id/createVacation"
+              android:name="com.example.apparchilog.fragments.CreateHolidayFragment"
+              android:label="Créer vacance"
+              tools:layout="@layout/fragment_create_vacation_activity"/>
+    <fragment android:id="@+id/creatParticipant"
+              android:name="com.example.apparchilog.fragments.ParticipantFragment"
+              android:label="Ajouter participant"
+              tools:layout="@layout/fragment_create_participant"/>
+     <fragment android:id="@+id/detailActivity"
+              android:name="com.example.apparchilog.fragments.DetailsActivityFragment"
+              android:label="Details activity"
+              tools:layout="@layout/fragment_details_activity">
+
+         <action android:id="@+id/action_detailActivity_to_creatParticipant" app:destination="@id/creatParticipant"/>
+         <action android:id="@+id/action_detailActivity_to_createVacation" app:destination="@id/createVacation"/>
+         <action android:id="@+id/action_detailActivity_to_weather" app:destination="@id/weather"/>
+     </fragment>
+    <fragment android:id="@+id/fragment_activity"
+              android:name="com.example.apparchilog.fragments.ActivityFragment"
+              android:label="Activités"
+              tools:layout="@layout/fragment_activity">
+        <action android:id="@+id/action_fragment_activity_to_detailActivity" app:destination="@id/detailActivity"/>
+        <action android:id="@+id/action_fragment_activity_to_createVacation" app:destination="@id/createVacation"/>
+    </fragment>
+    <fragment android:id="@+id/agenda"
+              android:name="com.example.apparchilog.fragments.CalendarFragment"
+              android:label="Calendrier"
+              tools:layout="@layout/fragment_calendar">
+    </fragment>
+    <fragment android:id="@+id/weather"
+              android:name="com.example.apparchilog.fragments.WeatherFragment"
+              tools:layout="@layout/fragment_weather"
+              android:label="Météo">
+    </fragment>
+    <fragment
+            android:id="@+id/usersFragment"
+            android:name="com.example.apparchilog.fragments.ChatsFragment"
+            android:label="Users"
+            tools:layout="@layout/fragment_chats">
+        <action
+                android:id="@+id/action_usersFragment_to_messagesFragment"
+                app:destination="@id/messagesFragment" />
+    </fragment>
+    <fragment
+            android:id="@+id/messagesFragment"
+            android:name="com.example.apparchilog.fragments.MessagesFragment"
+            android:label="Messages"
+            tools:layout="@layout/fragment_messages"/>
+</navigation>

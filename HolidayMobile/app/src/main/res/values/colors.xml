@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <!--<color name="black">#FF000000</color>-->
+    <color name="green">#008000</color>
+    <color name="bcolor">#8C08D5</color>
+    <color name="gray">#888</color>
+    <color name="blue">#0000FF</color>
+    <color name="lavender">#8692f7</color>
+    <color name="white">#ECEEFA</color>
+    <color name="purple">#5166E3</color>
+    <color name="black">#5166E3</color>
+    <color name="back_ground">#9CEFDBCD</color>
+    <color name="back_ground_toolbar">#8C08D5</color>
+    <color name="back_ground_card">#B84ACC</color>
+    <color name="click_effect_color">#B84ACC</color>
+    <color name="status_active">#4CAF50</color> <!-- Vert -->
+    <color name="status_inactive">#E2D8D8</color> <!-- Rouge -->
+    <color name="status_pending">#FFC107</color> <!-- Jaune -->
+    <color name="colorAccent">#65ACE4</color>
+    <color name="rouge">#C40606</color> <!-- Jaune -->
+    <color name="primary">#FF6200EE</color>
+    <color name="meteo_bg">#e3f2fd</color>
+    <color name="meteo_title">#e3f2fd</color>
+    <color name="backgroundColor">#E0F7FA</color>
+    <color name="darker_gray">#616161</color>
+    <color name="receiver_message_background">#E0F7FA</color>
+    <color name="sender_message_background">#C8E6C9</color>
+    <color name="chat_color_sender">#1E88E5</color>
+    <color name="chat_color_receiver">#7CB342</color>
+
+</resources>
